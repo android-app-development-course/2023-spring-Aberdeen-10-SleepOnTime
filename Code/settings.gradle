@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "SleepOnTime"
+include ':app'
+
+gradle.ext.exoplayerModulePrefix = 'exoplayer-'
+apply from: file("C:/Users/PRO/AndroidStudioProjects/ExoPlayer-release-v2/settings.gradle")

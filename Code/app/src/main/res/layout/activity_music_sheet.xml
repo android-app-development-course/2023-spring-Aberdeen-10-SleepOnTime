@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.MusicSheet">-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/close"-->
+<!--        android:layout_marginTop="160dp"-->
+<!--        android:text="close"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/musicOne"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:text="music1"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/musicTwo"-->
+<!--        android:layout_marginTop="240dp"-->
+<!--        android:text="music2"/>-->
+<!--</RelativeLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bg"
+    tools:context=".ui.MusicSheet">
+
+
+    <android.widget.Button
+        android:id="@+id/musicOne"
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_purple3"
+        android:contentDescription="@string/button"
+        android:text="@string/music1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+
+
+    <android.widget.Button
+        android:id="@+id/musicTwo"
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_purple2"
+        android:contentDescription="@string/button"
+        android:text="@string/music2"
+        android:textColor="@color/purple6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicOne"
+        app:layout_constraintVertical_bias="0.094"/>
+
+
+
+    <android.widget.Button
+        android:id="@+id/musicThree"
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_purple3"
+        android:contentDescription="@string/button"
+        android:text="@string/music3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicTwo"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <android.widget.Button
+        android:id="@+id/musicFour"
+        android:layout_width="347dp"
+        android:layout_height="107dp"
+        android:background="@drawable/button_purple2"
+        android:contentDescription="@string/button"
+        android:text="@string/music4"
+        android:textColor="@color/purple6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicThree"
+        app:layout_constraintVertical_bias="0.322"/>
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="58dp"
+        android:layout_height="54dp"
+        android:background="@color/no_color"
+        android:contentDescription="@string/exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/musicsheet_leave_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

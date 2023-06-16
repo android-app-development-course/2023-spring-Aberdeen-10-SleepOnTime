@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--login-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Login"
+    android:background="@drawable/register_bg3">
+
+
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:id="@+id/email"-->
+<!--        android:layout_width="308dp"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:layout_marginTop="60dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/getcode"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="get code"-->
+<!--        android:layout_marginTop="180dp"/>-->
+
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:id="@+id/code"-->
+<!--        android:layout_width="224dp"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_marginTop="240dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/loginButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login"-->
+<!--        android:layout_marginTop="300dp"/>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/backButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="back"-->
+<!--        android:layout_marginTop="360dp"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusBottomStart="24dp"
+            app:boxCornerRadiusTopEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="none"
+            app:hintTextColor="@color/white"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:background="@drawable/text_input_border_round"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/varify_code_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="24dp"
+            app:boxCornerRadiusBottomStart="24dp"
+            app:boxCornerRadiusTopEnd="24dp"
+            app:boxCornerRadiusTopStart="24dp"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="none"
+            app:hintTextColor="@color/white"
+            app:startIconTint="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/getcode"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_code"
+                    android:gravity="center"
+                    android:text="@string/code"
+                    android:textColor="@color/purple6"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/verify_code"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/text_input_border"/>
+
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/backButton"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pink"
+                android:text="@string/Back"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <android.widget.Button
+                android:id="@+id/loginButton"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_white"
+                android:drawablePadding="8dp"
+                android:text="@string/login"
+                android:textColor="@color/purple6"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/wechat_icon_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/login_ltbtn2_1"
+                android:background="@null"
+                android:drawablePadding="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:contentDescription="微信登录"/>
+
+            <ImageButton
+                android:id="@+id/g_icon_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/login_rtbtn2_1"
+                android:background="@null"
+                android:drawablePadding="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:contentDescription="谷歌登录"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

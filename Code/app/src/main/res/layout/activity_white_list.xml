@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/countdown_bg"
+    tools:context=".ui.WhiteList">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.App.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/elevatedButton3"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:text="@string/back"
+        android:textColor="@color/purple6"
+        android:textSize="20sp"
+        app:backgroundTint="@color/purple2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <android.widget.Button
+        android:id="@+id/elevatedButton4"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_add"
+        android:drawableLeft="@drawable/whitelist_icon"
+        android:text="@string/add"
+        android:textColor="@color/purple3"
+        android:textSize="20sp"
+        app:backgroundTint="@color/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/outlinedButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_whitelist"
+        android:textColor="@color/purple2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098"
+        app:strokeColor="@color/purple2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

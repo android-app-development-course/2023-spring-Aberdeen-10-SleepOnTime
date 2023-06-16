@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">SleepOnTime</string>
+    <string name="bottom_1">Clock</string>
+    <string name="bottom_2">Home</string>
+    <string name="title">Sure to exit?</string>
+    <string name="supporting_text">It will take one unlock chance to do so.</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">OK</string>
+    <string name="image_text">image_text</string>
+    <string name="music">music</string>
+    <string name="countdown">countdown</string>
+    <string name="tab_to_start">tab to start</string>
+    <string name="button">button</string>
+    <string name="exit">exit</string>
+    <string name="music1">music1</string>
+    <string name="music2">music2</string>
+    <string name="music3">music3</string>
+    <string name="music4">music4</string>
+    <string name="sleep_now">sleep now</string>
+    <string name="choose_a_sleep_time">choose a sleep time</string>
+    <string name="add">add</string>
+    <string name="back">back</string>
+    <string name="my_whitelist">my whitelist</string>
+    <string name="email">Email</string>
+    <string name="code">code</string>
+    <string name="verify_code">verify code</string>
+    <string name="Back">back</string>
+    <string name="login">log in</string>
+    <string name="signup">sign up</string>
+    <string name="image">image</string>
+    <string name="sleep_user">Sleep User</string>
+    <string name="total_lock_time">Total lock time: 46 h 35 min</string>
+    <string name="get_more">get more</string>
+</resources>
