@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--choose-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:paddingLeft="16dp"-->
+<!--    android:paddingTop="16dp"-->
+<!--    android:paddingRight="16dp"-->
+<!--    android:paddingBottom="16dp"-->
+<!--    tools:context=".ui.Choose">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sleepNowButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:text="SleepNow" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sleepLaterButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="SleepLater" />-->
+
+
+<!--</RelativeLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.Choose">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.App.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <android.widget.Button
+        android:id="@+id/sleepNowButton"
+        android:layout_width="250dp"
+        android:layout_height="71dp"
+        android:background="@drawable/button_purple2"
+        android:text="@string/sleep_now"
+        android:textColor="@color/purple6"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <android.widget.Button
+        android:id="@+id/sleepLaterButton"
+        android:layout_width="250dp"
+        android:layout_height="71dp"
+        android:background="@drawable/button_white"
+        android:text="@string/choose_a_sleep_time"
+        android:textColor="@color/purple6"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepNowButton"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="296dp"
+        android:src="@drawable/choose_moon"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
